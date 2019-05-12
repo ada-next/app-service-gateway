@@ -8,5 +8,7 @@ server.use(router.routes());
 server.on('started', () => {
 });
 server.startup().catch((e) => {
-    console.log('--->done',e);
+    console.log('--->done', e);
 });
+
+module.exports = server;

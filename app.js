@@ -19,7 +19,8 @@ let app = {
         ]
     },
     server: {
-        port: 8081
+        serverPath: "./index.js",
+        port: 8080
     },
     ssr: {
         urls: ["/"],
