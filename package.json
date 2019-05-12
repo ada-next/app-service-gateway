@@ -11,7 +11,7 @@
   "author": "WangJinliang(hou80houzhu)",
   "license": "MIT",
   "dependencies": {
-    "ada-cloud-boot": "0.0.8",
+    "ada-cloud-boot": "0.0.10",
     "adajs": "^3.0.0-beta.40",
     "async-on-exit": "^0.1.0",
     "koa-router": "^7.4.0",
