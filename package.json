@@ -6,7 +6,7 @@
   "scripts": {
     "ada": "node node_modules/.bin/adajs",
     "pack": "node node_modules/.bin/ada-pack",
-    "dev": "node node_modules/ada-pack/bin/cli dev"
+    "dev": "node node_modules/ada-pack/bin/cli dev || true"
   },
   "author": "WangJinliang(hou80houzhu)",
   "license": "MIT",
