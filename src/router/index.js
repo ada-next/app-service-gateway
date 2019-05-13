@@ -9,4 +9,12 @@ router.get('/get', ({ response, service }) => {
     });
 });
 
+router.get('/login', ({ response, service, request }) => {
+    return service.get('/app-service-uc/login', request.query).then(a => {
+        response.body = a;
+    }).catch(a => {
+        response.body = a;
+    });
+});
+
 module.exports = router;
