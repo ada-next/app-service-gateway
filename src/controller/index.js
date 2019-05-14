@@ -9,15 +9,11 @@ class TestController extends Controller {
     }
 
     get({ service }) {
-        return service.get('/app-service-taskflow/set').then(a => {
-            return this.success(a);
-        });
+        return service.get('/app-service-taskflow/set');
     };
 
     login({ service, request }) {
-        return service.get('/app-service-uc/login', request.query).then(a => {
-            return this.success(a);
-        });
+        return service.get('/app-service-uc/login', request.query);
     };
 }
 
