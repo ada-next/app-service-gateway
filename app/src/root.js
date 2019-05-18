@@ -1,10 +1,10 @@
 import { root, StaticViewGroup } from "adajs";
-import Test from "./test";
+import Container from "./container";
 
 @root()
 class Root extends StaticViewGroup {
     onready() {
-        this.addChild(Test);
+        this.addChild(Container);
     }
 }
 

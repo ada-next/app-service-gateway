@@ -1,6 +1,6 @@
 import {Service} from "adajs";
 
-class TestService extends Service{
+class ContainerService extends Service{
 	defaultData(){
 		return {};
 	}
@@ -10,4 +10,4 @@ class TestService extends Service{
 	}
 }
 
-export default TestService;
+export default ContainerService;
