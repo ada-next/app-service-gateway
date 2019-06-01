@@ -1,8 +1,27 @@
-<div>
-    <user_table/>
+<div class="left">
+    <div class="head">
+        <div class="logo">
+            <icon @id="{{ data.logo }}" class="icon"></icon>
+        </div>
+        <div class="desc">ADACMS</div>
+    </div>
+    <div class="body">
+        <!-- <menu @parameter="{{ {list:data.menu} }}" /> -->
+    </div>
+    <div class="foot">© 2019 adajs.io</div>
 </div>
-<div>
-    <input type="text" placeholder="username" data-find="username">
-    <input type="text" placeholder="password" data-find="password">
-    <button onclick="{{ addUser() }}">add user</button>
+<div class="right">
+    <div class="inner">
+        <div class="head">
+            <div class="title">{{ data.current?data.current.title:'' }}</div>
+            <div class="menu">
+                <div class="icon"><i class=":pmk-more_vert"></i></div>
+                <div class="list">
+                    <div class="item" onclick="{{ editPassword() }}">修改密码</div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+        </div>
+    </div>
 </div>

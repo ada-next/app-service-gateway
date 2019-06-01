@@ -1,1 +1,160 @@
-.container{}
+.admin-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    background: #f8f8f8;
+
+    .head {
+      border-bottom: 1px solid #D7D7D7;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      background-image: url("./images/bg.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .logo {
+        font-size: 80px;
+        text-align: center;
+        padding: 30px 0 20px 0;
+        position: relative;
+        z-index: 5;
+
+        .icon {
+          display: inline-block;
+          vertical-align: middle;
+          width: 1em;
+          height: 1em;
+          stroke-width: 0;
+          stroke: currentColor;
+          fill: currentColor;
+          margin-top: -9px;
+        }
+      }
+
+      .desc {
+        line-height: 30px;
+        padding: 0 10px 0 10px;
+        position: relative;
+        z-index: 6;
+        background: rgba(0, 0, 0, .1);
+      }
+    }
+
+    .body {
+      position: absolute;
+      top: 175px;
+      left: 0;
+      right: 0;
+      bottom: 35px;
+    }
+
+    .foot {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      padding: 0 10px 0 10px;
+      line-height: 35px;
+      font-size: 12px;
+      background: #f0f0f0;
+    }
+  }
+
+  .right {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+
+    .inner {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: white;
+      z-index: 999;
+
+      .head {
+        line-height: 35px;
+        border-bottom: 1px solid #D7D7D7;
+        position: relative;
+
+        .title {
+          padding: 0 10px 0 15px;
+        }
+
+        .menu {
+          position: absolute;
+          top: 0;
+          right: 0;
+
+          .icon {
+            width: 35px;
+            text-align: center;
+            font-size: 17px;
+          }
+
+          .list {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            box-shadow: 0 0 10px #bfbfbf;
+            z-index: 999;
+            display: none;
+            cursor: default;
+
+            .item {
+              padding: 0 20px 0 20px;
+              line-height: 35px;
+              white-space: nowrap;
+            }
+          }
+
+          &:hover {
+            .list {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .body {
+        position: absolute;
+        left: 0;
+        top: 36px;
+        right: 0;
+        bottom: 0;
+      }
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -20px;
+      bottom: 15px;
+      left: 0;
+      width: 20px;
+      border-radius: 0 0 0 50%;
+      box-shadow: 0 0 20px #727272;
+      transition: all ease-out .3s;
+      z-index: 1;
+    }
+  }
+}
